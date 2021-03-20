@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android.support.design="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5A5959"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        app:srcCompat="@drawable/icons8_aplicativo_de_desktop_netflix_400" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edtNameLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/edtUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:ems="11"
+            android:hint="Nome de Usuario"
+            android:shadowColor="#000000"
+            android:textColor="#000000" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edtPasswordLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:passwordToggleEnabled="true">
+
+        <EditText
+            android:id="@+id/edtUserPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:ems="11"
+            android:hint="Senha"
+            android:inputType="textPassword"
+            android:shadowColor="#000000"
+            android:textColor="#000000" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <!--<EditText
+        android:id="@+id/edtUserPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Senha"
+        android:inputType="textPassword"
+        />-->
+
+
+    <ImageButton
+        android:id="@+id/btnIn"
+        android:layout_width="100dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/transparent"
+        android:onClick="login"
+        android:scaleType="centerCrop"
+        android:src="@drawable/kisspng_computer_icons_login_symbol_download_login_interface_5ada871f3d20a8_2422893715242708792504" />
+
+
+</LinearLayout>
